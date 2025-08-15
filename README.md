@@ -1,61 +1,62 @@
-# 🐺 ImageWoof Classification with Custom DataLoader & Pooling Layers  
+🐺 ImageWoof Classification with Modified Pooling Layers
+📌 Project Overview
 
-![Python](https://img.shields.io/badge/Python-3.10-blue)  
-![PyTorch](https://img.shields.io/badge/PyTorch-🔥-red)  
-![Colab](https://img.shields.io/badge/Google%20Colab-✔️-yellow)  
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)  
+This project showcases deep learning on the ImageWoof dataset (10 dog breeds 🐶), a subset of ImageNet.
+I trained a ResNet18-based neural network with:
 
-## 📌 Project Overview  
-This project showcases **deep learning on the ImageWoof dataset**, a subset of ImageNet with 10 dog breeds 🐶.  
-I trained a custom neural network with:  
-- ✅ **Custom DataLoader** written from scratch  
-- ✅ **Modified pooling layers** at the end of the network  
-- ✅ Training on **Google Colab GPU**  
-- ✅ Achieved strong results within just **10 epochs** 🎯  
+✅ Standard PyTorch DataLoader using ImageFolder
+✅ Modified pooling layer (AdaptiveAvgPool2d) at the end of the network
+✅ Training on Google Colab GPU
+✅ Achieved stable results within just 10 epochs 🎯
 
-The work was an **extension of my Imagenette experiment**, proving my ability to adapt the same pipeline to a new dataset.
+This project extends my earlier Imagenette experiment by applying the same pipeline to ImageWoof.
 
----
+🚀 Key Features
 
-## 🚀 Key Features  
-- **Dataset**: [ImageWoof](https://github.com/fastai/imagenette)  
-- **Framework**: PyTorch  
-- **Training**: 10 epochs on Colab GPU  
-- **Model Improvements**:
-  - Replaced pooling layers for better feature extraction  
-  - Implemented a flexible DataLoader  
-- **Results**: Stable training, convergence, and successful classification  
+Dataset: ImageWoof (10 classes of dog breeds)
 
----
+Framework: PyTorch
 
-## 📂 Repository Structure  
+Training: 10 epochs on Colab GPU
+
+Model Modifications:
+
+Replaced default ResNet18 average pooling with AdaptiveAvgPool2d
+
+Adjusted final fully connected layer for 10-class classification
+
+Results: Stable accuracy achieved on validation set
+
+📂 Repository Structure
 📦 ImageWoof-Classification
-┣ 📜 ImageWoof_CustomNet.ipynb # Main notebook
-┣ 📜 README.md # Project overview (this file)
+ ┣ 📜 ImageWoof_CustomNet.ipynb   # Main training notebook
+ ┣ 📜 README.md                   # Project overview (this file)
 
----
+📊 Results & Observations
 
-## 📊 Results & Observations  
-- Model successfully trained on **10 classes of ImageWoof**  
-- The custom pooling layer increased feature learning adaptability  
-- Smooth training pipeline re-usable for **Imagenette / ImageWoof**  
+Model successfully trained on 10 ImageWoof classes
 
----
+Modified pooling improved adaptability in feature learning
 
-## 💡 Future Work  
-- Experiment with **ResNet / EfficientNet** backbones  
-- Add **accuracy/loss visualizations**  
-- Test model on **real-world dog breed images**  
+Training pipeline can be easily extended to Imagenette / ImageWoof
 
----
+💡 Future Work
 
-## ✨ Why This Project Matters  
-This project proves my ability to:  
-- Handle **real-world datasets** efficiently  
-- Write **custom neural network components**  
-- Work end-to-end: **data → model → training → results → GitHub documentation**  
+Experiment with ResNet/EfficientNet backbones
 
----
+Add accuracy/loss plots for better visualization
 
-👨‍💻 **Author**: Mohd Amaan  
-📧 Contact: mohdamaan40963@gmail.com  
+Test model on real-world dog images
+
+✨ Why This Project Matters
+
+This project demonstrates my ability to:
+
+Handle real-world image datasets efficiently
+
+Modify and fine-tune neural network architectures
+
+Build an end-to-end pipeline: data → model → training → results → documentation
+
+👨‍💻 Author: Mohd Amaan
+📧 Contact: mohdamaan40963@gmail.com
